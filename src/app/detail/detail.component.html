@@ -1,0 +1,44 @@
+<div class="content-wrapper">
+  <div class="container margin-footer">
+  <div class="row" *ngIf="films">
+      <div class="col-4">
+        <img class="thumb-poster"
+             src="../../../assets/images/poster/{{films.poster}}.jpeg">
+
+      </div>
+      <div id="secFilmsDetail" class="col-8">
+      <h3 class="mg0">{{films.title}} </h3>
+        <p>
+          <span class="director">
+          <strong>Director:</strong> {{films.director}}
+          </span>
+          <span class="producer">
+          <strong>Producer:</strong> {{films.producer}}
+          </span>
+            {{films.opening_crawl}}
+              <br>
+        </p>
+      </div>
+    </div>
+
+    <div class="row" *ngIf="peoples">
+      <div class="col">
+        <div class="module-header">
+        <h2 class="title"> Characters </h2>
+
+        </div>
+        <div class="row box-people">
+
+          <div class="col" *ngFor="let people of peoples; let i = index">
+            <div class="content">
+              <img class="thumb-small" src="../../../assets/images/people/small/thumb.png">
+              <div class="info">
+                <h3>{{people.name}}</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

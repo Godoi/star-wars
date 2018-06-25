@@ -1,0 +1,68 @@
+.content-wrapper,
+.example-wrapper {
+  height: 100%;
+  margin-top: 100px;
+}
+.margin-footer{
+  margin-bottom: 10%;
+}
+.thumb-poster{
+  width: 100%;
+}
+.mg0{margin:0!important}
+.producer,
+.director {
+  font-size: 14px;
+  color: #e15021;
+  width: 100%;
+  display: block;
+}
+.module-header {
+  border-top: 2px solid rgba(170, 170, 170, 0.25);
+  border-bottom: 2px solid rgba(170, 170, 170, 0.25);
+  margin: 3.04em 0 1.52em;
+  padding: 0.65rem 12px 0.4rem;
+  box-sizing: border-box;
+  .title {
+    font-size: 1.15rem;
+    line-height: 1.35rem;
+    color: #ddd;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+  }
+}
+.box-people{
+  .content{
+    height: 200px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    position: relative;
+    .thumb-small{
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 4px 4px 0 0;
+    }
+    .info{
+      background-image: url(https://static-mh.content.disney.io/starwars/assets/shared/bg_hash_top-dca2c5ab1b2e.png);
+      background-size: 7px;
+      background-repeat: repeat-x;
+      background-position: top left;
+      background-color: #282727;
+      height: 100px;
+      padding: 10px;
+      border-top: 2px solid #e15021;
+    }
+    h3{
+      color: #FFF;
+      font-size: 15px;
+      line-height: 1.15em;
+      font-weight: normal;
+    }
+  }
+}
+
+
+
+
+

@@ -1,0 +1,40 @@
+html,
+body {
+  width: 100% !important;
+  height: 100% !important;
+  transition: opacity ease-in 0.2s;
+}
+body {
+  background: #000 url(../images/back.jpg) top right no-repeat !important;
+  background-size: contain;
+}
+.none {
+  display: none !important;
+}
+
+#secFilms .carousel-control-next {
+  display: none !important;
+}
+
+#secFilms .carousel-control-prev {
+  display: none !important;
+}
+
+#secFilms h3,
+#secFilmsDetail h3 {
+  margin-top: 15%;
+  color: #f2ae0a !important;
+  background-color: #282727;
+  padding: 25px 25px 0 25px;
+  border-radius: 4px 4px 0px 0px;
+}
+#secFilms p,
+#secFilmsDetail p {
+  color: #f2ae0a !important;
+  font-weight: normal;
+  font-size: 16px;
+  background-color: #282727;
+  padding: 25px;
+  border-radius: 0px 0px 4px 4px;
+}
+

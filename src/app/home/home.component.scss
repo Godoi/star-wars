@@ -1,0 +1,124 @@
+.pt15 {
+  padding-top: 15px !important;
+}
+.spacer {
+  //height: 80vh !important;
+  height: 89vh !important;
+  .btn{
+    color:#f2ae0a !important;
+    padding: 10px 20px;
+    border: 1px solid #f2ae0a !important;
+    margin-top: 20px;
+    &:hover{
+      background-color: #f2ae0a;
+      color:#000!important;
+    }
+  }
+
+  div{
+    height: 100%;
+  }
+  h3{
+    color:#FFF;
+    font-size: 34px;
+    margin-bottom: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .director{
+    font-size: 14px;
+    color:#e15021;
+    width:100%;
+    display: block;
+  }
+  .producer{
+    font-size: 14px;
+    color:#e15021;
+    width:100%;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .block-txt{
+    margin: 10% 0 0 0;
+    width: calc((100vw - 120px) * .45);
+  }
+}
+.content-wrapper,
+.example-wrapper {
+  height: 100%;
+  margin-top: 76px;
+}
+.content-wrapper .scrollContent {
+  height: 100%;
+}
+.mainView {
+  position: relative;
+  min-height: 1000px;
+  z-index: 0;
+}
+.carousel {
+  display: block;
+  overflow: hidden;
+  height: 100%;
+}
+.carousel-item {
+  position: relative;
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  transition: -webkit-transform .6s ease;
+  transition: transform .6s ease;
+  transition: transform .6s ease, -webkit-transform .6s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+.carousel-caption {
+  bottom: 0 !important;
+  width: 34%;
+  left: inherit;
+  right: 0!important;
+  text-align: left;
+}
+.carousel-caption.right {
+  right: 2%!important;
+  width: 50%!important;
+}
+.carousel-caption p {
+  text-align: left;
+}
+.thumb-carousel {
+  width: 100%;
+  opacity: 0.5;
+}
+form.move {
+  text-align: left;
+  position: fixed;
+  top: 70px;
+  left: 20px;
+  display: block;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  padding: 20px;
+  z-index: 20;
+}
+form fieldset {
+  padding: 0 10px 0 10px;
+  margin: 5px 0 0 0;
+}
+form.move p {
+  padding: 4px;
+  float: left;
+}
+.active {
+  background-color: #307FB5;
+}
+
+
+

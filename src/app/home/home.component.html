@@ -1,0 +1,68 @@
+<div class="content-wrapper">
+  <div class="scrollContent">
+
+    <div class="spacer s1" id="secFilms">
+      <ngb-carousel>
+        <ng-template ngbSlide *ngFor="let film of films.results; let i = index">
+          <img alt="{{film.title}}" class="thumb-carousel" src="../../../assets/images/films/{{i}}.jpg">
+          <div class="carousel-caption right">
+            <h3> {{film.title}} </h3>
+
+            <p class="pt15">
+              <span class="director">
+                <strong> Director: </strong>{{film.director}}
+              </span>
+              <span class="producer">
+                <strong>Producer: </strong>{{film.producer}}
+              </span>
+              {{film.opening_crawl}} <br>
+              <a class="btn" (click)="detail(film.url)" href="javascript:void(0);">Detail</a>
+            </p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+    <div class="spacer s1" id="secPeople">
+
+      <ngb-carousel>
+        <ng-template ngbSlide *ngFor="let people of peoples.results; let i = index">
+          <img alt="{{people.name}}" class="thumb-carousel" src="../../../assets/images/people/{{i}}.jpg">
+          <div class="carousel-caption">
+            <h3> {{people.name}}</h3>
+            <p>CHARACTERS</p>
+
+          </div>
+        </ng-template>
+      </ngb-carousel>
+
+    </div>
+    <div class="spacer s1 none" id="secStarships">
+      <div class="container">
+          <p>Starships</p>
+      </div>
+    </div>
+    <div class="spacer s1 none" id="secVehicles">
+      <div class="container">
+        <p>Vehicles</p>
+
+
+      </div>
+    </div>
+    <div class="spacer s1 none" id="secSpecies">
+      <div class="container">
+        <p>Species</p>
+
+
+      </div>
+    </div>
+    <div class="spacer s1 none" id="secPlanets">
+      <div class="container">
+        <p>Planets</p>
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
+

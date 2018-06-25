@@ -1,0 +1,17 @@
+@import "../../../assets/styles/_variables";
+.logo{
+    height: 78px;
+    padding: 0;
+    margin-top: -18px;
+    .swg-starwars:before {
+      height: 10px;
+      display: block;
+    }
+
+}
+.bg-dark{
+  background-color: $background
+}
+.nav-link{
+  font-size: 22px;
+}
