@@ -20,7 +20,7 @@ export class DataService {
     return this.http
       .get<People[]>(this.endpoint)
       .pipe(
-        tap(peoples => console.log(`fetched People`)),
+        tap(peoples => console.log(`Fetched People`)),
         catchError(this.handleError("getPeople", []))
       );
   }
@@ -30,7 +30,7 @@ export class DataService {
     return this.http
       .get<People>(this.endpoint)
       .pipe(
-      tap(people => console.log(`fetched Specific People`)),
+      tap(people => console.log(`Fetched Specific People`)),
         catchError(this.handleError<People>(`getSpecificPeople id=${id}`))
       );
   }
@@ -40,7 +40,7 @@ export class DataService {
     return this.http
       .get<Films[]>(this.endpoint)
       .pipe(
-        tap(films => console.log(`fetched films`)),
+        tap(films => console.log(`Fetched Films`)),
         catchError(this.handleError("getFilms", []))
       );
   }
@@ -50,7 +50,7 @@ export class DataService {
     return this.http
       .get<Films>(this.endpoint)
       .pipe(
-        tap(films => console.log(`fetched Film`)),
+        tap(films => console.log(`Fetched Film`)),
         catchError(this.handleError<Films>(`getFilm id=${id}`))
       );
   }

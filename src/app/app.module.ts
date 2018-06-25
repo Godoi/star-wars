@@ -10,16 +10,12 @@ import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found';
 import { WindowRef } from "./shared/windowRef";
 import { NavbarModule } from "./shared/navbar/navbar.module";
-/** Feature Areas imports */
-import { HomeComponent } from "./home/home.component";
-import { DetailComponent } from "./detail/detail.component";
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageNotFoundComponent,
-    HomeComponent,
-    DetailComponent
+    PageNotFoundComponent
   ],
   imports: [
     HttpClientModule,
