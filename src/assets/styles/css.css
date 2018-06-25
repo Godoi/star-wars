@@ -8,6 +8,7 @@ body {
   background: #000 url(../images/back.jpg) top right no-repeat !important;
   background-size: contain;
 }
+
 .none {
   display: none !important;
 }

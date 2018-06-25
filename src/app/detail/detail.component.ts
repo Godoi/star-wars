@@ -51,7 +51,7 @@ export class DetailComponent implements OnInit {
   getPeople(id): void {
     this.service.getSpecificPeople(id).subscribe(people => {
       this.itens.push(people);
-      this.peoples = this.itens.slice(0, 6);
+      this.peoples = this.itens;
     });
   }
 
