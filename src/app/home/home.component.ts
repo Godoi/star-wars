@@ -25,6 +25,7 @@ export class HomeComponent implements OnInit {
     config.interval = 5000;
     config.wrap = false;
     config.keyboard = false;
+
     this.getPeople();
     this.getFilms();
   }
