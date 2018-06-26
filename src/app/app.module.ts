@@ -10,19 +10,17 @@ import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found';
 import { WindowRef } from "./shared/windowRef";
 import { NavbarModule } from "./shared/navbar/navbar.module";
-
+import { FooterModule } from "./shared/footer/footer.module";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PageNotFoundComponent
-  ],
+  declarations: [AppComponent, PageNotFoundComponent],
   imports: [
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule.forRoot(),
-    NavbarModule
+    NavbarModule,
+    FooterModule
   ],
   providers: [WindowRef],
   bootstrap: [AppComponent]
