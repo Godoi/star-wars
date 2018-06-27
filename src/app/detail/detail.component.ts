@@ -32,14 +32,7 @@ export class DetailComponent implements OnInit {
     let id = +this.route.snapshot.paramMap.get("id");
     let idPeople;
     this.service.getFilm(id).subscribe(films => {
-      films["poster"] = films.title
-        .toString()
-        .toLowerCase()
-        .trim()
-        .replace(/\s+/g, "-")
-        .replace(/&/g, "-and-")
-        .replace(/[^\w\-]+/g, "")
-        .replace(/\-\-+/g, "-");
+      films["poster"] = this.slugify(films.title);
       this.films = films;
       this.films.characters.map(elem => {
         idPeople = parseFloat(elem.split("/")[elem.split("/").length - 2]);
@@ -50,6 +43,7 @@ export class DetailComponent implements OnInit {
 
   getPeople(id): void {
     this.service.getSpecificPeople(id).subscribe(people => {
+      people["photo"] = this.slugify(people.name);
       this.itens.push(people);
       this.peoples = this.itens;
     });
@@ -57,5 +51,16 @@ export class DetailComponent implements OnInit {
 
   goBack(): void {
     this.location.back();
+  }
+
+  slugify(char): void {
+    return char
+      .toString()
+      .toLowerCase()
+      .trim()
+      .replace(/\s+/g, "-")
+      .replace(/&/g, "-and-")
+      .replace(/[^\w\-]+/g, "")
+      .replace(/\-\-+/g, "-");
   }
 }
